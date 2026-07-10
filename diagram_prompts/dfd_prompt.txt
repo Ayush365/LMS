@@ -1,0 +1,40 @@
+Create a detailed Data Flow Diagram (DFD) for the LMS Smart Planner application.
+
+Include the following:
+- External entities: Student user, Teacher user, Admin user, Web browser.
+- Main processes:
+  1. User Authentication and Session Management
+  2. Course Catalog and Enrollment
+  3. Course Creation and Management
+  4. Task Management and Task Lifecycle
+  5. Report Submission and Review
+  6. Notification Delivery
+  7. Calendar Event Management
+  8. Analytics and Activity Logging
+- Data stores:
+  - users
+  - courses
+  - modules
+  - materials
+  - enrollments
+  - prerequisites
+  - tasks
+  - reports
+  - notifications
+  - events
+  - activity_logs
+  - study_sessions
+
+Describe data flows between the browser frontend and the backend API, and between backend processes and the database.
+
+Produce a Level 0 overview and a Level 1 breakdown for key processes that shows how user actions move data between entities and stores.
+
+Emphasize the flows for:
+- login/register
+- course browsing/enrollment
+- task creation/updates/deletion
+- report submission and teacher/admin review
+- notification generation and marking read
+- event creation and calendar retrieval
+- analytics summary retrieval
+- activity logging of user actions

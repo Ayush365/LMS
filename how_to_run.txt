@@ -1,0 +1,59 @@
+# How to Run the LMS Smart Planner Platform
+
+## Prerequisites
+- Node.js (v18+ recommended)
+- Python (v3.10+ recommended)
+- MySQL 8.0.46
+
+## Database Setup
+1. Ensure MySQL 8.0.46 is running locally.
+2. Create a database named `lms_db` in MySQL:
+   ```sql
+   CREATE DATABASE lms_db;
+   ```
+3. The default connection string in the backend expects the user `root` with password `root` on localhost:3306. You can configure this via a `.env` file in the `backend` directory:
+   `DATABASE_URL="mysql+pymysql://root:root@localhost:3306/lms_db"`
+
+## Backend Setup
+1. Open a terminal and navigate to the `backend` directory:
+   ```bash
+   cd C:\Users\Ayush\Documents\LMS\backend
+   ```
+2. Create and activate a Python virtual environment:
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Initialize the Database and Demo Data:
+   ```bash
+   python seed_db.py
+   ```
+5. Run the FastAPI server:
+   ```bash
+   uvicorn main:app --reload
+   ```
+   The backend API will run on `http://127.0.0.1:8000`.
+
+## Frontend Setup
+1. Open a new terminal and navigate to the `frontend` directory:
+   ```bash
+   cd C:\Users\Ayush\Documents\LMS\frontend
+   ```
+2. Install Node.js dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the Vite development server:
+   ```bash
+   npm run dev
+   ```
+   The frontend will run on the port specified by Vite (usually `http://localhost:5173`).
+
+## Demo Accounts
+Once the application is running, you can log in using the following demo accounts (initialized by `seed_db.py`):
+- **Admin**: admin@example.com / 1234
+- **Student**: student@example.com / 1234

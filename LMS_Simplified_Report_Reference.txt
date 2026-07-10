@@ -1,0 +1,113 @@
+LMS SMART PLANNER - PROJECT REPORT REFERENCE (SIMPLIFIED)
+
+TABLE OF CONTENTS
+1. Introduction
+2. Objective of The Project
+3. Scope of The Project
+4. Definition of Problem
+5. Benefit of The Project
+6. Main Modules
+7. Technical Overview
+8. System Configuration
+9. Block Diagram
+10. DFD Diagram (Data Flow)
+11. ER Diagram (Database Structure)
+12. Project Explanation
+13. Coding (Sample with explanation)
+14. Result and Analysis
+15. Software Testing
+16. Conclusion
+17. Bibliography or Reference
+
+---
+
+1. INTRODUCTION
+The LMS Smart Planner is a digital platform created to help students and teachers manage their academic life. Unlike a regular website, this system combines course materials with a smart to-do list and focus tools to make studying easier.
+
+2. OBJECTIVE OF THE PROJECT
+The main goal is to create a single place where a student can:
+- See all their subjects and modules.
+- Track their homework and assignments visually.
+- Use a timer to stay focused while studying.
+- Get feedback from teachers on their progress.
+
+3. SCOPE OF THE PROJECT
+The project covers everything a modern student needs:
+- A secure login system.
+- Personal dashboards for Students, Teachers, and Admins.
+- A task board to organize daily study items.
+- Simple graphs to show how much work has been completed.
+
+4. DEFINITION OF PROBLEM
+Most students use too many different apps (one for notes, one for a timer, one for a to-do list). This makes them lose focus. Our project solves this by putting everything into one simple system.
+
+5. BENEFIT OF THE PROJECT
+- Saves Time: No need to switch between apps.
+- Better Focus: The built-in timer keeps students on track.
+- Clear Progress: Students can see exactly what they have finished and what is pending.
+- Better Communication: Teachers can give direct feedback on student work.
+
+6. MAIN MODULES
+- User Module: Handles profiles for Students, Teachers, and Admins.
+- Task Module: A visual board for managing homework.
+- Focus Module: A study timer based on the "Pomodoro" method (25 mins study, 5 mins break).
+- Course Module: Stores and organizes subject notes and videos.
+- Reports Module: Allows students to submit their progress for review.
+
+7. TECHNICAL OVERVIEW
+The project is built using popular and easy-to-understand tools:
+- Frontend (User Interface): Made with React to ensure the website is fast and interactive.
+- Backend (Server): Made with FastAPI (Python) to handle data quickly.
+- Database: Uses MySQL to store all information safely in tables.
+- Styling: Custom CSS was used to make the website look modern and premium.
+
+8. SYSTEM CONFIGURATION
+- Computer: Any laptop with 8GB RAM and a modern processor.
+- Tools: VS Code (for coding), Python (for the server), and a Web Browser (Chrome/Edge).
+
+9. BLOCK DIAGRAM
+Imagine three blocks:
+1. The User (Frontend): What you see on the screen.
+2. The Server (Backend): The "brain" that processes your requests.
+3. The Database: The "memory" that stores all your data.
+
+10. DFD DIAGRAM (DATA FLOW)
+This shows how data moves:
+- User enters login details -> Server checks the memory -> User is allowed in.
+- Student creates a task -> Server saves it to the database -> Task appears on the board.
+
+11. ER DIAGRAM (DATABASE STRUCTURE)
+The database has simple tables:
+- Users: Stores names and emails.
+- Tasks: Stores task titles and status (To-Do, Done).
+- Courses: Stores the names of subjects.
+- Reports: Stores student feedback and teacher comments.
+
+12. PROJECT EXPLANATION
+The project works in a simple flow:
+1. You log in as a Student or Teacher.
+2. Students see their tasks and can start a study timer.
+3. Teachers can see if students are finishing their work and leave comments.
+4. Admins manage the whole system to keep it running smoothly.
+
+13. CODING (SAMPLE WITH EXPLANATION)
+Sample: "if user.role == 'admin': show_all_tasks()"
+Explanation: This code checks who is logged in. If they are an Admin, it shows them everything. If they are a Student, it only shows their own work.
+
+14. RESULT AND ANALYSIS
+The system was tested and found to be very fast. Users can load their dashboards in less than a second, and the data stays safe even if the page is refreshed.
+
+15. SOFTWARE TESTING
+We tested the system in three ways:
+1. Login Test: Ensuring only the right people can enter.
+2. Task Test: Making sure tasks can be moved and deleted correctly.
+3. Security Test: Making sure students cannot access Admin settings.
+
+16. CONCLUSION
+The LMS Smart Planner is a successful tool that helps students be more productive. It is easy to use, looks great, and organizes academic life efficiently.
+
+17. BIBLIOGRAPHY OR REFERENCE
+- Python Official Documentation
+- React.js Guides
+- W3Schools (for CSS and HTML)
+- MySQL Tutorials

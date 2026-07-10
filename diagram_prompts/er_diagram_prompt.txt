@@ -1,0 +1,25 @@
+Generate an Entity-Relationship (ER) diagram definition for the LMS Smart Planner database.
+
+Include these entities with attributes and relationships:
+- User(id PK, name, email, hashed_password, role, created_at)
+- Course(id PK, title, description, thumbnail, owner_id FK, created_at)
+- Enrollment(id PK or composite PK(user_id, course_id), user_id FK, course_id FK, enrolled_at)
+- Prerequisite(course_id FK, prerequisite_id FK)
+- Module(id PK, title, course_id FK)
+- Material(id PK, title, material_type, file_path, module_id FK)
+- Task(id PK, title, description, status, priority, due_date, assigned_to FK, created_by FK)
+- Report(id PK, student_id FK, content, feedback, status, submitted_at, reviewed_at)
+- Notification(id PK, user_id FK, message, is_read)
+- Event(id PK, user_id FK, title, start_time, end_time, description)
+- ActivityLog(id PK, user_id FK, action, timestamp)
+- StudySession(id PK, task_id FK, user_id FK, start_time, end_time, duration_minutes)
+
+Define cardinality clearly, for example:
+- A User can own many Courses.
+- A User can enroll in many Courses, and a Course can have many enrolled Users.
+- A Course contains many Modules, a Module contains many Materials.
+- A Task is created by one User and assigned to one User.
+- A Report belongs to one User.
+- Notifications, Events, and ActivityLogs belong to one User.
+
+Mention any optional or nullable relationships from the project if relevant, and keep the diagram aligned with a FastAPI/SQLAlchemy/MySQL schema.

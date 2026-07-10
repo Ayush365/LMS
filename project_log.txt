@@ -1,0 +1,45 @@
+================================================================================
+LMS PROJECT LOG - BEGINNER-FRIENDLY VERSION
+================================================================================
+
+1. PROJECT GOAL
+--------------------------------------------------------------------------------
+A website to help students study better. It includes a study timer, a task 
+manager, and progress charts to see how much work has been done.
+
+2. TECHNOLOGY USED (SIMPLE TERMS)
+--------------------------------------------------------------------------------
+- THE WEBSITE (FRONTEND): Built with React. 
+  (I wrote all the styling code myself to make it look modern and professional).
+
+- THE BRAIN (BACKEND): Built with Python. 
+  (It handles the logic, like logging users in and saving their data).
+
+- THE STORAGE (DATABASE): Built with MySQL. 
+  (A safe place where all user information and tasks are kept).
+
+3. KEY FEATURES
+--------------------------------------------------------------------------------
+- STUDY TIMER: Helps users focus and saves their time to the dashboard.
+- TASK MANAGER: A simple way to track what needs to be done.
+- VISUAL CHARTS: Shows study progress in an easy-to-read way.
+- TEACHER TOOLS: Allows teachers to upload courses and see student reports.
+
+4. MAJOR PROJECT STEP
+--------------------------------------------------------------------------------
+"SWITCHING STORAGE SYSTEMS"
+I moved the whole project from one type of database to another (MySQL). 
+This taught me how to:
+- Connect different parts of the app together.
+- Update settings without breaking the existing features.
+- Move data safely between systems.
+
+5. SECURITY & DESIGN
+--------------------------------------------------------------------------------
+- I use encrypted passwords to keep users safe.
+- I designed the entire app to look like a premium "Dark Mode" dashboard.
+- The app works on any screen size (Computer or Phone).
+
+================================================================================
+See INTERVIEW_PREP.md for more tips on explaining this in person!
+================================================================================

@@ -1,0 +1,17 @@
+Create a high-level block diagram for a Learning Management System called "LMS Smart Planner".
+
+The system includes:
+- Frontend: React + Vite single page application with UI modules for Landing Page, Login, Dashboard, Tasks, Reports, Analytics, Calendar, Settings, User Management, and Course Management.
+- Backend: FastAPI service with routers for authentication, users, tasks, reports, analytics, notifications, and calendar.
+- Database: MySQL / SQLAlchemy data storage.
+- Auth & security: JWT-based login and role-based access control for student, teacher, and admin roles.
+- Uploads: static uploads directory for file assets.
+
+Show major system blocks and their relationships, including:
+- Browser UI / React client
+- API gateway / FastAPI backend
+- Router components and business logic
+- Database
+- External integrations if any
+
+Do not include low-level implementation details. Focus on the component-level architecture and information flow between frontend, backend, authentication, and database.
